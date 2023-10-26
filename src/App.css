@@ -1,0 +1,27 @@
+.newbgcolor {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    31deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(48, 54, 160, 1) 39%,
+    rgba(0, 212, 255, 1) 96%
+  );
+}
+
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+
+.guestOptions {
+  background-color: #fff;
+  box-shadow: 0 0 10px #efefef;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--text-100);
+  position: absolute;
+  top: 2rem;
+  width: 220px;
+  z-index: 1000;
+}
