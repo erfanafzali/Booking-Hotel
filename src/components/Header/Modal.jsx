@@ -10,6 +10,7 @@ import useOutsideClick from "../../hooks/useOutsideClick";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
+import { format } from "date-fns";
 
 function Modal({ open, setOpen, title, destination, setDestination }) {
   const [openOption, setOpenOption] = useState(false);
@@ -57,12 +58,12 @@ function Modal({ open, setOpen, title, destination, setDestination }) {
           </button>
         </div>
         <div className="w-full flex flex-col justify-center items-center">
-          <div className="flex justify-between items-center text-xs w-full gap-y-2 flex-col ">
-            <input
+          <div className="flex justify-between items-center text-xs  w-full gap-y-2 flex-col ">
+            <input 
               value={destination}
               onChange={(e) => setDestination(e.target.value)}
               type="text"
-              className="w-full rounded-lg bg-blue-400 py-1 outline-0 border-0 px-2 placeholder:text-blue-300 text-white font-medium"
+              className="w-full rounded-lg bg-blue-400 py-1 outline-0 border-0 px-2 sm:text-base placeholder:text-blue-300 text-white font-medium"
               placeholder="Where to go ?"
               id="destination"
               name="destinationModal"
@@ -72,16 +73,24 @@ function Modal({ open, setOpen, title, destination, setDestination }) {
               className="w-[100%] flex justify-between items-center bg-blue-400 rounded-lg px-2 text-blue-200 py-0.5"
             >
               <span>
-                <CalendarDaysIcon className="w-8" />
+                <CalendarDaysIcon className="w-6 sm:w-8" />
               </span>
-              <div>{date.selection}</div>
+              <div className="font-bold text-[10px] sm:text-base">{`${format(date[0].startDate, "MM/dd/yyyy")} => ${format(
+                date[0].endDate,
+                "MM/dd/yyyy"
+              )}`}</div>
             </div>
 
             {openDate && (
               <DateRange
                 ranges={date}
                 className="absolute top-[60%] lg:left-[29%]  md:left-[21%] bg-blue-100 "
+                id="DateRangeDropDown"
                 onChange={(item) => setDate([item.selection])}
+                minDate={new Date()}
+                moveRangeOnFirstSelection={true}
+                closeOnSelect={true}
+                isClearable={true}
               />
             )}
           </div>
@@ -89,7 +98,7 @@ function Modal({ open, setOpen, title, destination, setDestination }) {
             <div
               id="optionDropDown"
               onClick={() => setOpenOption(!openOption)}
-              className="flex justify-between items-center text-[11px] mt-3 w-full rounded-lg  bg-blue-400 py-1 outline-0 border-0 px-2 text-blue-300 cursor-pointer "
+              className="flex justify-between items-center text-[11px] sm:text-base mt-3 w-full rounded-lg  bg-blue-400 py-1 outline-0 border-0 px-2 text-blue-300 cursor-pointer "
             >
               <span>
                 <span>adult: {option.adult}</span>

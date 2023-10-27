@@ -51,7 +51,7 @@ function Header() {
   };
 
   return (
-    <header className="w-full h-auto flex justify-center items-center py-4 newbgcolor">
+    <header className="w-full h-auto flex justify-around items-center py-4 newbgcolor">
       <div className="flex justify-between items-center w-full h-auto px-2 py-2">
         <Login />
         <SortHeader
