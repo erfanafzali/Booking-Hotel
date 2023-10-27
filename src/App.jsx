@@ -5,7 +5,7 @@ import LocationList from "./components/LocationList/LocationList";
 
 function App() {
   return (
-    <div className="container mx-auto w-full">
+    <div className="container mx-auto w-full px-4">
       <Toaster />
       <Header />
       <LocationList />

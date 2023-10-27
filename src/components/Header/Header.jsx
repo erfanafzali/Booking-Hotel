@@ -51,7 +51,7 @@ function Header() {
   };
 
   return (
-    <header className="w-full h-auto flex justify-around items-center py-4 newbgcolor">
+    <header className="w-full h-auto flex justify-around items-center py-4 newbgcolor lg:mt-8 md:mt-6 mt-4 rounded-lg shadow-lg shadow-blue-700">
       <div className="flex justify-between items-center w-full h-auto px-2 py-2">
         <Login />
         <SortHeader
@@ -169,7 +169,7 @@ function SortHeader({
           <DateRange
             id="DateRangeDropDown"
             ranges={date}
-            className="absolute top-[15%] lg:left-[29%]  md:left-[21%] bg-blue-100 "
+            className="absolute top-[17%] lg:left-[28%]  md:left-[21%] bg-blue-100 "
             onChange={(item) => setDate([item.selection])}
             minDate={new Date()}
             moveRangeOnFirstSelection={true}
@@ -217,7 +217,7 @@ function GuestOption({ option, handleOptions, setOpenOption }) {
   return (
     <div
       ref={optionsRef}
-      className="absolute lg:w-[22%] lg:right-[27%] md:right-[26%] md:w-[20%] bg-blue-200 shadow-blue-400 gap-y-1 rounded-lg lg:top-20 md:top-[70px] h-auto z-10 text-blue-700 flex flex-col justify-center items-center"
+      className="absolute lg:w-[22%] lg:right-[25%] md:right-[27%] md:w-[20%] bg-blue-200 shadow-blue-400 gap-y-1 rounded-lg lg:top-28 md:top-[97px] h-auto z-10 text-blue-700 flex flex-col justify-center items-center"
     >
       <GuestOptionItem
         type="adult"
