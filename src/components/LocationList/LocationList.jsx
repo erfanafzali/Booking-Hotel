@@ -13,15 +13,15 @@ function LocationList() {
         {data.map((item) => {
           return (
             <div
-              className=" w-full md:my-4 rounded-lg shadow-blue-500 shadow-md h-full"
+              className=" w-full md:my-4  shadow-blue-500 shadow-md h-full"
               key={item.id}
             >
               <img
-                className="object-cover overflow-hidden w-full max-h-44 rounded-t-lg h-auto"
+                className="object-cover overflow-hidden w-full max-h-44  rounded-t-lg h-auto"
                 src={item.picture_url.url}
                 alt={item.name}
               />
-              <div className="w-full bg-blue-700 h-[40%] flex flex-col justify-center items-start">
+              <div className="w-full bg-blue-700 h-[42%] flex flex-col justify-center items-start">
                 <p className="text-white font-bold w-full text-center pt-2 text-base md:text-lg">
                   {item.smart_location}
                 </p>
@@ -29,7 +29,7 @@ function LocationList() {
                   {item.name}
                 </p>
                 <div className="w-full flex justify-center items-center font-semibold text-blue-200 py-1 text-sm sm:text-md md:text-lg lg:text-xl">
-                  <p>€ &nbsp;{item.price}&nbsp;</p>
+                  <p className="text-blue-50">€ &nbsp;{item.price}&nbsp;</p>
                   <span>night</span>
                 </div>
               </div>

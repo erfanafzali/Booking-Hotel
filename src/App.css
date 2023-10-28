@@ -8,11 +8,9 @@
   );
 }
 
-
 button:disabled {
   cursor: not-allowed;
 }
-
 
 .guestOptions {
   background-color: #fff;
@@ -24,4 +22,19 @@ button:disabled {
   top: 2rem;
   width: 220px;
   z-index: 1000;
+}
+
+.appLayout {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 130px);
+  /* background-color: var(--text-100); */
+  align-items: stretch;
+}
+
+.sidebar {
+  width: 35%;
+  overflow-y: scroll;
+  padding-right: 1rem;
 }

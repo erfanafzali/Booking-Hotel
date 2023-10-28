@@ -11,6 +11,7 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
+import { createSearchParams, useNavigate } from "react-router-dom";
 
 function Modal({ open, setOpen, title, destination, setDestination }) {
   const [openOption, setOpenOption] = useState(false);
@@ -29,6 +30,7 @@ function Modal({ open, setOpen, title, destination, setDestination }) {
   ]);
 
   const [openDate, setOpenDate] = useState(false);
+  const navigate = useNavigate();
 
   const handleOption = (name, operation) => {
     setOption((prev) => {
@@ -43,6 +45,21 @@ function Modal({ open, setOpen, title, destination, setDestination }) {
       };
     });
   };
+
+  const handleSearch = () => {
+    const encodedParams = createSearchParams({
+      date: JSON.stringify(date),
+      destination,
+      option: JSON.stringify(option),
+    });
+    //note : => setSearchParams(encodedParams);
+    navigate({
+      pathname: "/hotels",
+      search: encodedParams.toString(),
+    });
+    setOpen(false);
+  };
+
   if (!open) return null;
   return (
     <div>
@@ -59,7 +76,7 @@ function Modal({ open, setOpen, title, destination, setDestination }) {
         </div>
         <div className="w-full flex flex-col justify-center items-center">
           <div className="flex justify-between items-center text-xs  w-full gap-y-2 flex-col ">
-            <input 
+            <input
               value={destination}
               onChange={(e) => setDestination(e.target.value)}
               type="text"
@@ -75,10 +92,10 @@ function Modal({ open, setOpen, title, destination, setDestination }) {
               <span>
                 <CalendarDaysIcon className="w-6 sm:w-8" />
               </span>
-              <div className="font-bold text-[10px] sm:text-base">{`${format(date[0].startDate, "MM/dd/yyyy")} => ${format(
-                date[0].endDate,
+              <div className="font-bold text-[10px] sm:text-base">{`${format(
+                date[0].startDate,
                 "MM/dd/yyyy"
-              )}`}</div>
+              )} => ${format(date[0].endDate, "MM/dd/yyyy")}`}</div>
             </div>
 
             {openDate && (
@@ -118,7 +135,10 @@ function Modal({ open, setOpen, title, destination, setDestination }) {
               />
             )}
             <div className="w-full flex justify-center items-center ">
-              <button className="py-1.5 px-3 bg-blue-400 flex justify-center items-center rounded-xl mt-4 font-bold text-sm text-white">
+              <button
+                onClick={handleSearch}
+                className="py-1.5 px-3 bg-blue-400 flex justify-center items-center rounded-xl mt-4 font-bold text-sm text-white"
+              >
                 Search
               </button>
             </div>

@@ -16,6 +16,7 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
+import { createSearchParams, Navigate, useNavigate } from "react-router-dom";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -35,6 +36,7 @@ function Header() {
   ]);
 
   const [openDate, setOpenDate] = useState(false);
+  const navigate = useNavigate();
 
   const handleOptions = (name, operation) => {
     setOption((prev) => {
@@ -47,6 +49,19 @@ function Header() {
             ? option[name] - 1
             : [name],
       };
+    });
+  };
+
+  const handleSearch = () => {
+    const encodedParams = createSearchParams({
+      date: JSON.stringify(date),
+      destination,
+      option: JSON.stringify(option),
+    });
+    //note : => setSearchParams(encodedParams);
+    navigate({
+      pathname: "/hotels",
+      search: encodedParams.toString(),
     });
   };
 
@@ -66,6 +81,7 @@ function Header() {
           setOpenDate={setOpenDate}
           date={date}
           setDate={setDate}
+          handleSearch={handleSearch}
         />
         <BookMark />
         <ModalBtn
@@ -139,6 +155,7 @@ function SortHeader({
   setOpenDate,
   date,
   setDate,
+  handleSearch,
 }) {
   return (
     <div className="hidden md:flex w-[80%]  justify-center items-center ">
@@ -202,7 +219,10 @@ function SortHeader({
         )}
 
         <div className="w-[6%] flex justify-center items-center ">
-          <button className="flex justify-between items-center  text-blue-200 lg:px-3 py-1  rounded-xl">
+          <button
+            onClick={handleSearch}
+            className="flex justify-between items-center  text-blue-200 lg:px-3 py-1  rounded-xl"
+          >
             <MagnifyingGlassIcon className="w-9 p-2 rounded-full text-blue-100  bg-blue-700 " />
           </button>
         </div>
