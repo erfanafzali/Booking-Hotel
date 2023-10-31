@@ -16,11 +16,19 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
-import { createSearchParams, Navigate, useNavigate } from "react-router-dom";
+import {
+  createSearchParams,
+  Navigate,
+  useNavigate,
+  useSearchParams,
+} from "react-router-dom";
 
 function Header() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [destination, setDestination] = useState(
+    searchParams.get("destination") || ""
+  );
   const [open, setOpen] = useState(false);
-  const [destination, setDestination] = useState("");
   const [openOption, setOpenOption] = useState(false);
   const [option, setOption] = useState({
     adult: 1,
