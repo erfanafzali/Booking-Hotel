@@ -13,8 +13,9 @@ import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import { createSearchParams, useNavigate } from "react-router-dom";
 
-function Modal({ open, setOpen, title, destination, setDestination }) {
+function Modal({ open, setOpen, title }) {
   const [openOption, setOpenOption] = useState(false);
+  const [destination, setDestination] = useState("");
   const [option, setOption] = useState({
     adult: 1,
     children: 0,

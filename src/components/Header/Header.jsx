@@ -87,8 +87,6 @@ function Header() {
         <ModalBtn
           open={open}
           setOpen={setOpen}
-          destination={destination}
-          setDestination={setDestination}
           option={option}
           setOption={setOption}
           handleOptions={handleOptions}
