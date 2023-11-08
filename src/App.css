@@ -1,3 +1,5 @@
+@import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+
 .newbgcolor {
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -37,4 +39,27 @@ button:disabled {
   width: 35%;
   overflow-y: scroll;
   padding-right: 1rem;
+}
+
+.appLayout {
+  justify-content: space-between;
+  height: calc(100vh - 130px);
+  align-items: stretch;
+}
+
+.sidebar {
+  /* width: 35%; */
+  overflow-y: scroll;
+  padding-right: 1rem;
+}
+
+.leaflet-control {
+  z-index: 0 !important;
+}
+.leaflet-pane {
+  z-index: 0 !important;
+}
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 0 !important;
 }

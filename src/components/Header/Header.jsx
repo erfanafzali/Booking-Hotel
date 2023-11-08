@@ -3,7 +3,6 @@ import {
   ArrowRightOnRectangleIcon,
   BookmarkIcon,
   CalendarDaysIcon,
-  CalendarIcon,
   MagnifyingGlassIcon,
   MinusIcon,
   PlusIcon,
@@ -18,7 +17,6 @@ import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import {
   createSearchParams,
-  Navigate,
   useNavigate,
   useSearchParams,
 } from "react-router-dom";
@@ -74,7 +72,7 @@ function Header() {
   };
 
   return (
-    <header className="w-full h-auto flex justify-around items-center py-4 newbgcolor lg:mt-8 md:mt-6 mt-4 rounded-lg shadow-lg shadow-blue-700">
+    <header className="w-full h-auto flex justify-around items-center py-4 newbgcolor lg:mt-8 md:mt-6 mt-4 rounded-lg shadow-lg shadow-blue-700 ">
       <div className="flex justify-between items-center w-full h-auto px-2 py-2">
         <Login />
         <SortHeader

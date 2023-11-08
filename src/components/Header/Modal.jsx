@@ -11,11 +11,19 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
-import { createSearchParams, useNavigate } from "react-router-dom";
+import {
+  createSearchParams,
+  useNavigate,
+  useSearchParams,
+} from "react-router-dom";
 
 function Modal({ open, setOpen, title }) {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [destination, setDestination] = useState(
+    searchParams.get("destination") || ""
+  );
   const [openOption, setOpenOption] = useState(false);
-  const [destination, setDestination] = useState("");
+
   const [option, setOption] = useState({
     adult: 1,
     children: 0,
@@ -66,10 +74,10 @@ function Modal({ open, setOpen, title }) {
     <div>
       <div
         onClick={() => setOpen(false)}
-        className="w-screen h-screen fixed inset-0 backdrop-blur-sm"
+        className="w-screen h-screen fixed inset-0 backdrop-blur-sm "
       ></div>
-      <div className="absolute gap-y-1 sm:gap-y-2 md:gap-y-3 top-[20%] sm:top-[26%] bg-blue-300 left-[20%] px-3 py-3 w-[60%] rounded-xl p-1 sm:p-2 md:p-3 lg:p-4 shadow-blue-400 flex flex-col justify-center ">
-        <div className="flex justify-between  rounded-xl w-full mb-3">
+      <div className="absolute gap-y-1 sm:gap-y-2 md:gap-y-3 top-[20%] sm:top-[26%] bg-blue-300 left-[20%] px-3 py-3 w-[60%] rounded-xl p-1 sm:p-2 md:p-3 lg:p-4 shadow-blue-400 flex flex-col justify-center z-30">
+        <div className="flex justify-between  rounded-xl w-full mb-3 z-40">
           <h1 className="text-base text-blue-600 font-bold">{title}</h1>
           <button onClick={() => setOpen(false)}>
             <XCircleIcon className="h-5 w-5 sm:h-6 sm:w-6  text-red-500" />
