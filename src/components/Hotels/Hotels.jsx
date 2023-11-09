@@ -3,7 +3,7 @@ import { useHotels } from "../context/HotelsProvider";
 import Loader from "../Loader/Loader";
 
 function Hotels() {
-  const { isLoading, hotels } = useHotels();
+  const { isLoading, hotels, currentHotel } = useHotels();
 
   if (isLoading) <Loader />;
 
@@ -20,7 +20,11 @@ function Hotels() {
               key={item.id}
               to={`/hotels/${item.id}?lat=${item.latitude}&lng=${item.longitude} `}
             >
-              <div className="flex flex-col justify-center items-center bg-blue-600 rounded-xl mb-3 md:mb-4 lg:mb-6 shadow-md shadow-blue-600 sm:flex-row w-full">
+              <div
+                className={`flex flex-col justify-center items-center bg-blue-600 rounded-xl mb-3 md:mb-4 lg:mb-6 shadow-md shadow-blue-600 sm:flex-row w-full ${
+                  item.id === currentHotel?.id ? "border-[5px] rounded-lg border-white" : ""
+                } `}
+              >
                 <img
                   className="sm:w-[40%] w-full h-28 md:h-36 rounded-xl object-cover md:w-[50%]"
                   src={item.picture_url.url}
