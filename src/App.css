@@ -63,3 +63,8 @@ button:disabled {
 .leaflet-bottom {
   z-index: 0 !important;
 }
+
+
+.current-bookmarks {
+   color: blue;
+}
