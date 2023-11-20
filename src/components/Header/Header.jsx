@@ -17,6 +17,7 @@ import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import {
   createSearchParams,
+  Link,
   useNavigate,
   useSearchParams,
 } from "react-router-dom";
@@ -121,14 +122,17 @@ function ModalBtn({ open, setOpen, option, setOption, handleOptions }) {
 function BookMark() {
   return (
     <div className="w-full md:w-[18%] flex justify-center items-center">
-      <button className="font-bold text-blue-100 flex justify-center items-center">
+      <Link
+        to="/bookmarks"
+        className="font-bold text-blue-100 flex justify-center items-center"
+      >
         <span>
-          <BookmarkIcon className="w-4 sm:w-5 md:w-6 lg:w-9 text-blue-300" />
+          <BookmarkIcon className="w-4 sm:w-5  lg:w-9 text-blue-300" />
         </span>
         <span className="text-blue-300 text-sm  md:text-base lg:text-xl">
           Bookmarks
         </span>
-      </button>
+      </Link>
     </div>
   );
 }
@@ -162,22 +166,22 @@ function SortHeader({
   handleSearch,
 }) {
   return (
-    <div className="hidden md:flex w-[80%]  justify-center items-center ">
+    <div className="hidden md:flex w-[80%] justify-center items-center ">
       <div className="w-full flex justify-center items-center gap-x-3">
         <input
           value={destination}
           onChange={(e) => setDestination(e.target.value)}
           type="text"
-          className="w-[25%] flex justify-center items-center ml-2 bg-blue-400 rounded-lg outline-0 border-0 px-2 py-1.5 text-white font-semibold placeholder:text-blue-300"
+          className="w-[22%] flex justify-center items-center md:text-sm lg:text-base ml-2 bg-blue-400 rounded-lg outline-0 border-0 px-2 py-1.5 text-white font-semibold placeholder:text-blue-300"
           placeholder="Where to go ?"
           name="destination"
           id="destination"
         />
         <div
           onClick={() => setOpenDate(!openDate)}
-          className="w-[30%] flex justify-between items-center bg-blue-400 rounded-lg px-2 text-blue-100 py-0.5"
+          className="w-[30%] flex justify-between items-center bg-blue-400 rounded-lg px-2 md:px-1 lg:px-2 text-blue-100 py-0.5"
         >
-          <span className="w-[20%]">
+          <span className="w-[23%]">
             <CalendarDaysIcon className="lg:w-8 md:w-4 " />
           </span>
           <div className="w-[80%] lg:text-sm  md:text-[10px] md:py-1.5 font-semibold whitespace-nowrap">{`${format(
