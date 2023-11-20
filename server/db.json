@@ -1377,6 +1377,15 @@
       "longitude": "3.954469284597107",
       "host_location": "La Flamengrie France",
       "id": 15
+    },
+    {
+      "cityName": "Leudeville",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "48.57252631960821",
+      "longitude": "2.324383855626042",
+      "host_location": "Leudeville France",
+      "id": 16
     }
   ]
 }
