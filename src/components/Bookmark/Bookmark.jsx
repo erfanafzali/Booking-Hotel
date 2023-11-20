@@ -45,7 +45,7 @@ function Bookmark() {
                     svg
                     countryCode={item.countryCode}
                     style={{
-                      width: "1.2em",
+                      width: "1.3em",
                       height: "1.3em",
                     }}
                   />

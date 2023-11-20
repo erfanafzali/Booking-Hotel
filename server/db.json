@@ -1325,49 +1325,22 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Alexander",
-      "country": "Canada",
-      "countryCode": "CA",
-      "latitude": "50.46865137982609",
-      "longitude": "-96.2430759373337",
-      "host_location": "Alexander Canada",
-      "id": 1
-    },
-    {
-      "cityName": "A Dakhla Oasis",
-      "country": "Egypt",
-      "countryCode": "EG",
-      "latitude": "25.426541678801772",
-      "longitude": "25.925006076312634",
-      "host_location": "A Dakhla Oasis Egypt",
-      "id": 2
-    },
-    {
-      "cityName": "SA Remainder",
-      "country": "Australia",
-      "countryCode": "AU",
-      "latitude": "-29.897104452751524",
-      "longitude": "130.1235321719405",
-      "host_location": "SA Remainder Australia",
-      "id": 3
-    },
-    {
-      "cityName": "Qabqa",
-      "country": "China",
-      "countryCode": "CN",
-      "latitude": "36.24746690494652",
-      "longitude": "100.57595904046512",
-      "host_location": "Qabqa China",
-      "id": 4
-    },
-    {
-      "cityName": "Coari",
-      "country": "Brazil",
-      "countryCode": "BR",
-      "latitude": "-4.623619562511759",
-      "longitude": "-63.93508136818446",
-      "host_location": "Coari Brazil",
+      "cityName": "Ilica",
+      "country": "Turkiye",
+      "countryCode": "TR",
+      "latitude": "39.91394967016644",
+      "longitude": "40.9457887028849",
+      "host_location": "Ilica Turkiye",
       "id": 5
+    },
+    {
+      "cityName": "Rocquigny",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.028809623599386",
+      "longitude": "3.9785151611689655",
+      "host_location": "Rocquigny France",
+      "id": 7
     }
   ]
 }

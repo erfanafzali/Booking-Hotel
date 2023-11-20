@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import ReactCountryFlag from "react-country-flag";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useBookmark } from "../context/BookmarkListContext";
 import Loader from "../Loader/Loader";
 
@@ -13,7 +13,7 @@ function SingleBookmark() {
     getBookmarks(id);
   }, [id]);
 
-  if (isLoading || !currentBookmarks) return <Loader />; 
+  if (isLoading || !currentBookmarks) return <Loader />;
   return (
     <div className="w-full lg:pr-10 md:pr-8 sm:pr-6 pr-4 mt-10 sm:mt-12 md:mt-14 lg:mt-16 leaflet-control mb-10">
       <button
