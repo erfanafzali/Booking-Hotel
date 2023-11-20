@@ -1325,24 +1325,6 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Rocquigny",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "50.028809623599386",
-      "longitude": "3.9785151611689655",
-      "host_location": "Rocquigny France",
-      "id": 7
-    },
-    {
-      "cityName": "Wignehies",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "50.018555637049815",
-      "longitude": "4.003248062785678",
-      "host_location": "Wignehies France",
-      "id": 8
-    },
-    {
       "cityName": "Saint-Vrain",
       "country": "France",
       "countryCode": "FR",
@@ -1350,6 +1332,42 @@
       "longitude": "2.3271319558056995",
       "host_location": "Saint-Vrain France",
       "id": 9
+    },
+    {
+      "cityName": "Vert-le-Grand",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "48.57752240614676",
+      "longitude": "2.376082490255525",
+      "host_location": "Vert-le-Grand France",
+      "id": 10
+    },
+    {
+      "cityName": "Madrid",
+      "country": "Spain",
+      "countryCode": "ES",
+      "latitude": "40.447082975262255",
+      "longitude": "-3.682479858398438",
+      "host_location": "Madrid Spain",
+      "id": 11
+    },
+    {
+      "cityName": "Wignehies",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.00422760671095",
+      "longitude": "4.011417391011492",
+      "host_location": "Wignehies France",
+      "id": 12
+    },
+    {
+      "cityName": "Itteville",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "48.53528993340398",
+      "longitude": "2.3515213448999854",
+      "host_location": "Itteville France",
+      "id": 13
     }
   ]
 }
