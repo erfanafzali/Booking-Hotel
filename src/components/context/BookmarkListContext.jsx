@@ -82,7 +82,7 @@ function BookmarkListProvider({ children }) {
   }, []);
 
   async function getBookmarks(id) {
-    if (id === currentBookmarks?.id) return;
+    if (Number(id) === currentBookmarks?.id) return;
     dispatch({ type: "loading" });
     try {
       const { data } = await axios.get(`${BASE_URL}/bookmarks/${id}`);
