@@ -1325,15 +1325,6 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Saint-Vrain",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "48.539744294012884",
-      "longitude": "2.3271319558056995",
-      "host_location": "Saint-Vrain France",
-      "id": 9
-    },
-    {
       "cityName": "Vert-le-Grand",
       "country": "France",
       "countryCode": "FR",
@@ -1368,6 +1359,24 @@
       "longitude": "2.3515213448999854",
       "host_location": "Itteville France",
       "id": 13
+    },
+    {
+      "cityName": "Bretigny-sur-Orge",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "48.58433445578358",
+      "longitude": "2.289689090858103",
+      "host_location": "Bretigny-sur-Orge France",
+      "id": 14
+    },
+    {
+      "cityName": "La Flamengrie",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.023517516765104",
+      "longitude": "3.954469284597107",
+      "host_location": "La Flamengrie France",
+      "id": 15
     }
   ]
 }
