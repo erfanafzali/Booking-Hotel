@@ -1325,15 +1325,6 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Vert-le-Grand",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "48.57752240614676",
-      "longitude": "2.376082490255525",
-      "host_location": "Vert-le-Grand France",
-      "id": 10
-    },
-    {
       "cityName": "Madrid",
       "country": "Spain",
       "countryCode": "ES",
@@ -1386,6 +1377,15 @@
       "longitude": "2.324383855626042",
       "host_location": "Leudeville France",
       "id": 16
+    },
+    {
+      "cityName": "Feron",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.0355341680517",
+      "longitude": "4.041034440255743",
+      "host_location": "Feron France",
+      "id": 17
     }
   ]
 }

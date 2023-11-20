@@ -53,8 +53,8 @@ function Header() {
           operation === "inc"
             ? option[name] + 1
             : operation === "dec"
-            ? option[name] - 1
-            : [name],
+              ? option[name] - 1
+              : [name],
       };
     });
   };
