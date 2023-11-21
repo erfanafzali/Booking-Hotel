@@ -1325,33 +1325,6 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "countryCode": "ES",
-      "latitude": "40.447082975262255",
-      "longitude": "-3.682479858398438",
-      "host_location": "Madrid Spain",
-      "id": 11
-    },
-    {
-      "cityName": "Wignehies",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "50.00422760671095",
-      "longitude": "4.011417391011492",
-      "host_location": "Wignehies France",
-      "id": 12
-    },
-    {
-      "cityName": "Itteville",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "48.53528993340398",
-      "longitude": "2.3515213448999854",
-      "host_location": "Itteville France",
-      "id": 13
-    },
-    {
       "cityName": "Bretigny-sur-Orge",
       "country": "France",
       "countryCode": "FR",
@@ -1386,6 +1359,15 @@
       "longitude": "4.041034440255743",
       "host_location": "Feron France",
       "id": 17
+    },
+    {
+      "cityName": "Wignehies",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.013583290119804",
+      "longitude": "4.000259401509539",
+      "host_location": "Wignehies France",
+      "id": 18
     }
   ]
 }

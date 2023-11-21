@@ -49,8 +49,8 @@ function Modal({ open, setOpen, title }) {
           operation === "inc"
             ? option[name] + 1
             : operation === "dec"
-            ? option[name] - 1
-            : [],
+              ? option[name] - 1
+              : [],
       };
     });
   };
