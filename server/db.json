@@ -1368,6 +1368,24 @@
       "longitude": "2.334689231299696",
       "host_location": "Le Plessis-Pate France",
       "id": 23
+    },
+    {
+      "cityName": "Clairfontaine",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "49.98976662787036",
+      "longitude": "3.9912251244997696",
+      "host_location": "Clairfontaine France",
+      "id": 24
+    },
+    {
+      "cityName": "Rocquigny",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.00588488068893",
+      "longitude": "3.9759609252864445",
+      "host_location": "Rocquigny France",
+      "id": 25
     }
   ]
 }
