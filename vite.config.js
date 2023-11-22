@@ -14,7 +14,7 @@ export default defineConfig({
       }
     }
   },
-  base: "/Booking-Hotel",
+  base: "/",
   plugins: [react()],
 })
 
