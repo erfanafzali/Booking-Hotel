@@ -1,5 +1,6 @@
+/* eslint-disable react-refresh/only-export-components */
 import axios from "axios";
-import React, { createContext, useContext, useEffect, useReducer } from "react";
+import  { createContext, useContext, useEffect, useReducer } from "react";
 import toast from "react-hot-toast";
 
 const BookmarkContext = createContext();
@@ -58,6 +59,7 @@ function bookmarkReducer(state, action) {
 
 // 1.pending , 2.success, 3.rejected
 
+// eslint-disable-next-line react/prop-types
 function BookmarkListProvider({ children }) {
   const [{ bookmarks, isLoading, currentBookmarks }, dispatch] = useReducer(
     bookmarkReducer,

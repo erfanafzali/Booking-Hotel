@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start-server": "pm2 start server.js --name my-server"
+    "start-server": "pm2 start json-server --name my-json-server --watch server/db.json -- --port 5000 --delay 500"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
@@ -37,16 +37,5 @@
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"
-  },
-  "pm2": {
-    "name": "my-server",
-    "script": "server.js",
-    "args": "",
-    "exec_mode": "fork",
-    "instances": 1,
-    "autorestart": true,
-    "watch": false,
-    "max_memory_restart": "1G",
-    "log_date_format": "YYYY-MM-DD HH:mm Z"
   }
 }

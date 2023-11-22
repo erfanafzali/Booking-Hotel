@@ -1325,49 +1325,49 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Bretigny-sur-Orge",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "48.58433445578358",
-      "longitude": "2.289689090858103",
-      "host_location": "Bretigny-sur-Orge France",
-      "id": 14
+      "cityName": "Madrid",
+      "country": "Spain",
+      "countryCode": "ES",
+      "latitude": "40.38935900871937",
+      "longitude": "-3.7060750032178755",
+      "host_location": "Madrid Spain",
+      "id": 19
     },
     {
-      "cityName": "La Flamengrie",
+      "cityName": "Rocquigny",
       "country": "France",
       "countryCode": "FR",
-      "latitude": "50.023517516765104",
-      "longitude": "3.954469284597107",
-      "host_location": "La Flamengrie France",
-      "id": 15
+      "latitude": "50.019548053991706",
+      "longitude": "3.9652899290544408",
+      "host_location": "Rocquigny France",
+      "id": 20
+    },
+    {
+      "cityName": "Rocquigny",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.02748665155388",
+      "longitude": "3.9668357354054833",
+      "host_location": "Rocquigny France",
+      "id": 21
     },
     {
       "cityName": "Leudeville",
       "country": "France",
       "countryCode": "FR",
-      "latitude": "48.57252631960821",
-      "longitude": "2.324383855626042",
+      "latitude": "48.5821774060584",
+      "longitude": "2.3298800559853166",
       "host_location": "Leudeville France",
-      "id": 16
+      "id": 22
     },
     {
-      "cityName": "Feron",
+      "cityName": "Le Plessis-Pate",
       "country": "France",
       "countryCode": "FR",
-      "latitude": "50.0355341680517",
-      "longitude": "4.041034440255743",
-      "host_location": "Feron France",
-      "id": 17
-    },
-    {
-      "cityName": "Wignehies",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "50.013583290119804",
-      "longitude": "4.000259401509539",
-      "host_location": "Wignehies France",
-      "id": 18
+      "latitude": "48.59954471876766",
+      "longitude": "2.334689231299696",
+      "host_location": "Le Plessis-Pate France",
+      "id": 23
     }
   ]
 }

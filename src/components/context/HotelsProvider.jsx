@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import axios from "axios";
 import React, { createContext, useContext, useState } from "react";
 import toast from "react-hot-toast";
@@ -10,7 +11,7 @@ const BASE_URL = "http://localhost:5000/hotels";
 function HotelsProvider({ children }) {
   const [currentHotel, setCurrentHotel] = useState(null);
   const [isLoadingCurrHotel, setIsLoadingCurrHotel] = useState(false);
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const destination = searchParams.get("destination");
   const room = JSON.parse(searchParams.get("option"))?.room;
   const { isLoading, data: hotels } = useFetch(
@@ -41,6 +42,7 @@ function HotelsProvider({ children }) {
 }
 export default HotelsProvider;
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useHotels() {
   return useContext(HotelContext);
 }
