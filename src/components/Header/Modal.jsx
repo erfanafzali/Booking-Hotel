@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {
   CalendarDaysIcon,
   MinusIcon,
@@ -18,7 +19,7 @@ import {
 } from "react-router-dom";
 
 function Modal({ open, setOpen, title }) {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const [destination, setDestination] = useState(
     searchParams.get("destination") || ""
   );

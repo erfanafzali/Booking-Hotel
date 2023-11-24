@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import {
   AdjustmentsHorizontalIcon,
+  ArrowLeftOnRectangleIcon,
   ArrowRightOnRectangleIcon,
   BookmarkIcon,
   CalendarDaysIcon,
@@ -21,9 +23,10 @@ import {
   useNavigate,
   useSearchParams,
 } from "react-router-dom";
+import { useAuth } from "../context/AuthProvider";
 
 function Header() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const [destination, setDestination] = useState(
     searchParams.get("destination") || ""
   );
@@ -105,7 +108,7 @@ function Header() {
 
 export default Header;
 
-function ModalBtn({ open, setOpen, option, setOption, handleOptions }) {
+function ModalBtn({ open, setOpen }) {
   return (
     <div className=" md:hidden w-full flex justify-center items-center">
       <Modal open={open} setOpen={setOpen} title="Sort" />
@@ -138,16 +141,27 @@ function BookMark() {
 }
 
 function Login() {
+  const { user, isAuthentiacted } = useAuth()
   return (
     <div className="w-full md:w-[7%] flex justify-center items-center font-bold pr-4">
-      <button className="flex flex-col justify-center items-center">
-        <span>
-          <ArrowRightOnRectangleIcon className="w-5 sm:w-6 md:w-7 lg:w-9 font-bold text-blue-600" />
-        </span>
-        <span className="text-blue-600  text-xs sm:text-sm md:text-base lg:text-lg">
-          Login
-        </span>
-      </button>
+      {
+        isAuthentiacted ? <div className="flex flex-col justify-center items-center">
+
+          <span>
+            <ArrowLeftOnRectangleIcon className="w-5 sm:w-6 md:w-7 lg:w-9 font-bold text-blue-600" />
+          </span>
+          <span className=" text-xs sm:text-sm md:text-base lg:text-lg text-green-600">
+            {user.name}
+          </span>
+        </div> : <Link to="/login" className="flex flex-col justify-center items-center">
+          <span>
+            <ArrowRightOnRectangleIcon className="w-5 sm:w-6 md:w-7 lg:w-9 font-bold text-blue-600" />
+          </span>
+          <span className="text-blue-600  text-xs sm:text-sm md:text-base lg:text-lg">
+            Login
+          </span>
+        </Link>
+      }
     </div>
   );
 }

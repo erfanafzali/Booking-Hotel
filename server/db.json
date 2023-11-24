@@ -1325,40 +1325,49 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Abalessa",
-      "country": "Algeria",
-      "countryCode": "DZ",
-      "latitude": "23.18455079512732",
-      "longitude": "3.795523257510883",
-      "host_location": "Abalessa Algeria",
-      "id": 1
+      "cityName": "Djenne",
+      "country": "Mali",
+      "countryCode": "ML",
+      "latitude": "13.688515138106611",
+      "longitude": "-4.592285156250001",
+      "host_location": "Djenne Mali",
+      "id": 10
     },
     {
-      "cityName": "A Dakhla Oasis",
-      "country": "Egypt",
-      "countryCode": "EG",
-      "latitude": "25.02090651422749",
-      "longitude": "29.09059588509316",
-      "host_location": "A Dakhla Oasis Egypt",
-      "id": 7
+      "cityName": "Selm",
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": "51.71154559492817",
+      "longitude": "7.426757812500001",
+      "host_location": "Selm Germany",
+      "id": 11
     },
     {
-      "cityName": "Baba Kot",
-      "country": "Pakistan",
-      "countryCode": "PK",
-      "latitude": "28.43528783183169",
-      "longitude": "67.78003711374224",
-      "host_location": "Baba Kot Pakistan",
-      "id": 8
-    },
-    {
-      "cityName": "Vert-le-Grand",
+      "cityName": "Avesnelles",
       "country": "France",
       "countryCode": "FR",
-      "latitude": "48.57502442459166",
-      "longitude": "2.3358915251282713",
-      "host_location": "Vert-le-Grand France",
-      "id": 9
+      "latitude": "50.13792117130692",
+      "longitude": "3.9480007599337608",
+      "host_location": "Avesnelles France",
+      "id": 12
+    },
+    {
+      "cityName": "Beaufort",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.2181719710349",
+      "longitude": "3.9709593164086603",
+      "host_location": "Beaufort France",
+      "id": 13
+    },
+    {
+      "cityName": "Wignehies",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.02043018517499",
+      "longitude": "4.008400750622526",
+      "host_location": "Wignehies France",
+      "id": 14
     }
   ]
 }
