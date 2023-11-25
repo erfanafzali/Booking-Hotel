@@ -141,14 +141,21 @@ function BookMark() {
 }
 
 function Login() {
-  const { user, isAuthentiacted } = useAuth()
+  const navigate = useNavigate()
+  const { user, isAuthentiacted, logout } = useAuth()
+
+  const handleLogout = () => {
+    logout()
+    navigate("/")
+  }
+
   return (
     <div className="w-full md:w-[7%] flex justify-center items-center font-bold pr-4">
       {
         isAuthentiacted ? <div className="flex flex-col justify-center items-center">
 
           <span>
-            <ArrowLeftOnRectangleIcon className="w-5 sm:w-6 md:w-7 lg:w-9 font-bold text-blue-600" />
+            <ArrowLeftOnRectangleIcon onClick={handleLogout} className="w-5 sm:w-6 md:w-7 lg:w-9 font-bold text-blue-600" />
           </span>
           <span className=" text-xs sm:text-sm md:text-base lg:text-lg text-green-600">
             {user.name}

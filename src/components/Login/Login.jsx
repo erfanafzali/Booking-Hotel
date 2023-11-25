@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react"
 import { useAuth } from "../context/AuthProvider"
 import { useNavigate } from "react-router-dom"
@@ -14,7 +15,7 @@ function Login() {
     }
 
     useEffect(() => {
-        if (isAuthentiacted) navigate("/")
+        if (isAuthentiacted) navigate("/", { replace: true })
     }, [isAuthentiacted, navigate])
 
     return (

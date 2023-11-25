@@ -1325,49 +1325,67 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Djenne",
-      "country": "Mali",
-      "countryCode": "ML",
-      "latitude": "13.688515138106611",
-      "longitude": "-4.592285156250001",
-      "host_location": "Djenne Mali",
-      "id": 10
-    },
-    {
-      "cityName": "Selm",
-      "country": "Germany",
-      "countryCode": "DE",
-      "latitude": "51.71154559492817",
-      "longitude": "7.426757812500001",
-      "host_location": "Selm Germany",
-      "id": 11
-    },
-    {
-      "cityName": "Avesnelles",
+      "cityName": "Rocquigny",
       "country": "France",
       "countryCode": "FR",
-      "latitude": "50.13792117130692",
-      "longitude": "3.9480007599337608",
-      "host_location": "Avesnelles France",
-      "id": 12
-    },
-    {
-      "cityName": "Beaufort",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "50.2181719710349",
-      "longitude": "3.9709593164086603",
-      "host_location": "Beaufort France",
-      "id": 13
+      "latitude": "50.0085200475359",
+      "longitude": "3.9680380292340587",
+      "host_location": "Rocquigny France",
+      "id": 9
     },
     {
       "cityName": "Wignehies",
       "country": "France",
       "countryCode": "FR",
-      "latitude": "50.02043018517499",
-      "longitude": "4.008400750622526",
+      "latitude": "50.00686562827475",
+      "longitude": "3.9901945869324082",
       "host_location": "Wignehies France",
+      "id": 10
+    },
+    {
+      "cityName": "Reggane",
+      "country": "Algeria",
+      "countryCode": "DZ",
+      "latitude": "25.003023862376658",
+      "longitude": "0.7250976562500001",
+      "host_location": "Reggane Algeria",
+      "id": 11
+    },
+    {
+      "cityName": "Rocquigny",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.02748665155388",
+      "longitude": "3.9778281361240313",
+      "host_location": "Rocquigny France",
+      "id": 12
+    },
+    {
+      "cityName": "Wignehies",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.033549974180445",
+      "longitude": "3.9913968807610227",
+      "host_location": "Wignehies France",
+      "id": 13
+    },
+    {
+      "cityName": "Etroeungt",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.06639781590018",
+      "longitude": "3.9675275046641194",
+      "host_location": "Etroeungt France",
       "id": 14
+    },
+    {
+      "cityName": "Wignehies",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "50.028919869624914",
+      "longitude": "3.9972365936427234",
+      "host_location": "Wignehies France",
+      "id": 15
     }
   ]
 }

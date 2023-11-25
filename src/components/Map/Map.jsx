@@ -26,7 +26,7 @@ function Map({ markerLocations }) {
   }, [lat, lng]);
 
   useEffect(() => {
-    if (geoLocationPosition?.lat && GeolocationPosition?.lng)
+    if (geoLocationPosition?.lat && geolocationPosition?.lng)
       setMapCenter([geoLocationPosition.lat, geoLocationPosition.lng]);
   }, [geoLocationPosition]);
 

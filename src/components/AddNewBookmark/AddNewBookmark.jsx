@@ -2,9 +2,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ReactCountryFlag from "react-country-flag";
 import { useNavigate } from "react-router-dom";
-import useUrlLocation from "../../../hooks/useUrlLocation";
-import { useBookmark } from "../../context/BookmarkListContext";
-import Loader from "../../Loader/Loader";
+import useUrlLocation from "../../hooks/useUrlLocation";
+import { useBookmark } from "../context/BookmarkListContext";
+import Loader from "../Loader/Loader";
 
 const BASE_GEOCODING_URL =
   "https://api.bigdatacloud.net/data/reverse-geocode-client";
@@ -126,10 +126,7 @@ function AddNewBookmark() {
           >
             &larr; Back
           </button>
-          <button
-            className="bg-blue-600 text-white px-2 sm:px-3 md:px-4 lg:px-5 rounded-lg my-2 sm:my-3 md:my-4 lg:my-5 font-bold  sm:py-1 md:py-2 lg:py-3 text-xs sm:text-sm md:text-base lg:text-lg"
-            onClick={() => navigate(-1)}
-          >
+          <button className="bg-blue-600 text-white px-2 sm:px-3 md:px-4 lg:px-5 rounded-lg my-2 sm:my-3 md:my-4 lg:my-5 font-bold  sm:py-1 md:py-2 lg:py-3 text-xs sm:text-sm md:text-base lg:text-lg">
             Add
           </button>
         </div>

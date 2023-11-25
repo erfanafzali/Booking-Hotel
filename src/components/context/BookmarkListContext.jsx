@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 import axios from "axios";
-import  { createContext, useContext, useEffect, useReducer } from "react";
+import { createContext, useContext, useEffect, useReducer } from "react";
 import toast from "react-hot-toast";
 
 const BookmarkContext = createContext();
@@ -35,9 +35,9 @@ function bookmarkReducer(state, action) {
     case "bookmark/created":
       return {
         ...state,
-        isloading: false,
+        isLoading: false,
         bookmarks: [...state.bookmarks, action.payload],
-        currentBookmarks: action.payload,
+        currentBookmark: action.payload,
       };
     case "bookmark/deleted":
       return {
